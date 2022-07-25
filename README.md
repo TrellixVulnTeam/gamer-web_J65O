@@ -1,2 +1,2 @@
 # gamer-web
-the page i would use to practise my skills
+the page i would use to improve my skills
