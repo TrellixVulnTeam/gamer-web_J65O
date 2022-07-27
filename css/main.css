@@ -1,0 +1,835 @@
+/* CSS Emiliano Kaleb Jiménez Rivera*/
+/* 
+==================
+table of contents 
+1. global styles
+2. containers
+    2.1 global containers
+    2.2 specific containers
+3. elements
+    3.1 header elements
+    3.2 main elements
+    3.3 card elements
+    3.4 footer elements
+    3.5 other elements
+4. interactions
+    4.1 hovers
+        - header
+        - main
+        - card
+        - footer
+5. animations
+6. responsive
+
+
+==================
+*/
+
+
+
+/* 
+=============
+1. global styles
+=============
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+.image--absolute {
+    position: absolute;
+}
+
+.image--relative{
+    position: relative;
+}
+
+
+/* 
+=============
+2. containers
+=============
+*/
+
+/* ==== 2.1 globlal containers ==== */
+.container {
+    position: relative;
+}
+
+.container--row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-evenly;
+}
+
+.container--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ==== 2.2 specific containers ==== */
+
+.wrapper {
+    display: grid; 
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    /* grid-template-rows: 1fr 5fr 1fr; */
+}
+
+.header {
+    grid-area: header;
+    position: sticky;
+    top: 0px;
+    background-color:#c7c7c7;
+    color: #34a0a4;
+    height: 130px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(229, 229, 229);
+}
+
+.footer {
+    grid-area: footer;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #c7c7c7;
+    height: 500px;
+}
+
+
+/* 
+=============
+3. elements
+=============
+*/
+
+/* ==== 3.1 header elements ==== */
+.header__title {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 4px 4px 5px #52b69a;
+}
+
+.header__item {
+    background: linear-gradient(to top right, 
+                                #d9ed92, 
+                                #b5e48c, 
+                                #99d98c, 
+                                #76c893, 
+                                #52b69a, 
+                                #34a0a4,
+                                #168aad,
+                                #1a759f);
+    border-radius: 5px;
+    height: 40px;
+    width: 70px;
+    position: relative;
+    margin: 0px 4px;
+}
+
+.header__browser {
+    list-style: none;
+}
+
+.header__browser--submenu {
+    display: none;
+}
+
+.header__link {
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+
+/* ======================= */
+
+/* ==== 3.2 main elements ==== */
+
+/*posible colors
+#fbf8cc, 
+#fde4cf, 
+#ffcfd2, 
+#f1c0e8, 
+#cfbaf0, 
+#a3c4f3,
+#90dbf4,
+#8eecf5,
+#98f5e1,
+#b9fbc0*/
+
+/* images */
+.main__image {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 200px;
+}
+
+.main__title--image {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/* subtitles */
+
+.main__subtitle {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 25px;
+    margin: 10px 0px;
+}
+
+.main__subtitle--white {
+    color: white;
+    text-shadow: 4px 4px 6px black;
+}
+
+.main__subtitle--blue{
+    text-shadow: 4px 4px 6px #fbf8cc;
+}
+
+.main__subtitle--black {
+    color: black;
+    text-shadow: 4px 4px 6px grey;
+}
+
+.main__subtitle--big {
+    font-size: 16px;
+}
+
+.main__subtitle--medium {
+
+}
+
+.main__subtitle--purple {
+    color: #8e54ec;
+    text-shadow: 3px 3px #ffcfd2;
+    margin-top: 20px;
+}
+
+/* lines */
+.main__line {
+    width: 100px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.main__line--white {
+    border-color: white;
+}
+
+
+/* buttons */
+.main__button {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.main__button--blue {
+    border-color: #99d98cda;
+    background-color: #99d98cda;
+}
+
+/* links */
+.main__link {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.main__link--button {
+    display: block;
+    padding: 10px;
+    color: black; 
+}
+
+.main__link--page {
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 25px;
+    color: #8e54ec;
+    margin-left: 10px;
+}
+
+/* cards */
+.main__card {
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.main__card--tip {
+    height: 600px;
+    width: 240px;
+    background-color: #fbf8cc;
+    margin: 10px;
+}
+
+/* forms */
+.main__form {
+    padding: 20px;
+}
+
+.main__input {
+    display: block;
+    margin: 7px 0px;
+}
+
+/* tables */
+.main__table, .main__table-header, .main__table-data {
+    border-collapse: collapse;
+    border: solid 2px black;
+    padding: 5px;
+}
+
+.main__table-header {
+    background-color: #ffcfd2;
+}
+
+.main__table-data {
+    background-color: #fbf8cc;
+    text-align: center;
+}
+
+/* cells */
+.main__cell {
+    /* en este caso lo mejor es trabjar con porcentajes, ya que
+    no le especificas un tamanio y con ello puedes manipularlo me-
+    diante span */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px 0px black;
+    transition-delay: .3s;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+}
+
+.main__cell--horizontal-span {
+    grid-column-start: span 2;
+}
+
+.main__cell--vertical-span {
+    grid-row-start: span 2;
+}
+
+.main__cell--all-span {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+
+/* descriptions*/
+.main__description {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.main__description--bookcase {
+    display: none;
+    padding: 45px 15px;
+}
+
+.main__description--white {
+    color: white;
+    width: 130px;
+    font-weight: bolder;
+    padding: 45px 15px;
+    text-shadow: 3px 3px 3px black;
+}
+
+.main__description--tip {
+    padding: 10px;
+}
+
+/* galleries 
+mobile height: 150px width: 160*/
+.main__gallery {
+    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-auto-rows: 130px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+
+
+/* special containers */
+.main__bookcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 15px 0px;
+}
+
+.main__game {
+    background-color: #a3c4f3;
+    height: 100px;
+    width: 100%;
+    transition: all .5s ease-in-out .3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.general {
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../media/img/mobile/console-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: right;
+    background-position-y: center;
+    height: 300px;
+
+}
+
+.tips-presentation {
+    background-image: url(../media/img/tips.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    height: 300px;
+    padding: 30px 10px;
+}
+
+.tips {
+    padding: 10px;
+}
+
+.reviews-presentation {
+    background-image: url(../media/img/reviews.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 300px;
+    padding: 10px;
+}
+
+.reviews {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.collection {
+    background-color: #b9fbc0;
+    padding: 20px 0px;
+}
+
+.submit {
+    background-color: #b9fbc0;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #cfbaf0;
+    padding-bottom: 10px;
+}
+/* ======================= */
+
+/* ==== 3.3 card elements ==== */
+
+
+
+/* ======================= */
+
+/* ==== 3.4 footer elements ==== */
+
+.about {
+    padding: 20px;
+    border-bottom: solid 4px lightgrey;
+}
+
+.social-media {
+    padding: 20px;
+    border-bottom: solid 4px lightgrey;
+}
+
+.sponsors {
+    padding: 20px;
+}
+
+/* ======================= */
+
+/* ==== 3.5 other elements ==== */
+
+.indicator {
+    background-color: lightgrey;
+    border: solid 1px black;
+    border-radius: 10px;
+    height: 20px;
+    width: 80%;
+}
+
+.indicator__level {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.indicator__level--nice {
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.indicator__level--medium {
+    width: 60%;
+    background-color: yellow;
+}
+
+.indicator__level--bad {
+    width: 10%;
+    background-color: lightcoral;
+}
+
+/* ======================= */
+
+
+/* 
+=============
+4. interactions
+=============
+*/
+
+/* ==== 4.1 hovers ==== */
+
+/* header */
+.header__item--submenu:hover {
+    text-decoration: underline;
+}
+
+.header__item--submenu:hover .header__browser--submenu {
+    display: flex;
+    position: absolute;
+    height: 115px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.header__item:hover {
+    background: linear-gradient(to top right, 
+                                #fbf8cc, 
+                                #fde4cf, 
+                                #ffcfd2, 
+                                #f1c0e8, 
+                                #cfbaf0, 
+                                #a3c4f3,
+                                #90dbf4,
+                                #8eecf5,
+                                #98f5e1,
+                                #b9fbc0 );
+}
+
+
+/* main */
+.main__link--page:hover {
+    color: #00f5d4;
+    text-decoration: underline;
+}
+
+.main__button:hover {
+    box-shadow: 5px 5px 10px #d9ed92;
+}
+
+.main__game:hover {
+    height: 450px;
+    background-color: #8eecf5;
+}
+
+.main__game:hover .main__description--bookcase {
+    display: block;
+}
+
+.main__cell:hover {
+    height: 105%;
+    width: 105%;
+    transform: translate(-5px, -5px);
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+/* card */
+
+
+
+/* footer */
+
+/* ======================= */
+
+/* 
+=============
+5. animations
+=============
+*/
+
+
+
+/* 
+=============
+6. responsive
+=============
+*/
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        height: 80px;
+    }
+    
+    .header__item {
+        height: 50px;
+        width: 90px;
+    }
+
+    .header__link {
+        font-size: 20px;
+    }
+
+    .header__item--submenu:hover .header__browser--submenu {
+        height: 170px;
+    }
+
+    .general {
+        height: 400px;
+    }
+
+    .main__subtitle--big {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .main__line {
+        width: 250px;
+    }
+
+    .main__link--button {
+        font-size: 20px;
+    }
+
+    .main__link--page {
+        font-size: 30px;
+    }
+
+    .main__game {
+        height: 200px;
+    }
+
+    .main__game:hover {
+        height: 900px;
+    }
+
+    .main__image {
+        height: 140px;
+        width: 400px;
+    }
+
+    .main__description {
+        font-size: 36px;
+    }
+
+    .main__description--bookcase {
+        padding: 110px 30px;
+    }
+
+    .main__gallery {
+        grid-template-columns: repeat(2, 240px);
+        grid-auto-rows: 260px;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        justify-content: center;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 250px;
+    }
+
+    .about, .social-media, .sponsors {
+        width: 200px;
+    }
+
+    .about {
+        border-right: solid 4px lightgrey;
+        border-bottom: none;
+    }
+    
+    .social-media {
+        border-right: solid 4px lightgrey;
+        border-bottom: none;
+    }
+
+    .main__description--white {
+        font-size: 30px;
+        width: 260px;
+        padding: 25px 15px;
+    }
+
+    .main__card {
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .main__card--tip {
+        height: 1200px;
+        width: 480px;
+        background-color: #fbf8cc;
+        margin: 20px;
+    }
+
+    .main__card-title {
+        font-size: 50px;
+    }
+
+    .indicator {
+        border-radius: 35px;
+        height: 40px;
+    }
+
+    .main__form {
+        padding: 25px;
+    }
+    
+    .main__input {
+        height: 30px;
+        margin: 7px 0px;
+    }
+
+    .reviews-presentation {
+        background-position-y: top;
+    }
+
+    form {
+        font-size: 25px;
+    }
+
+    table {
+        font-size: 25px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px){
+    .games {
+        padding: 10px
+    }
+
+    .main__bookcase {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin: 15px 0px;
+    }
+
+    .main__game {
+        height: 200px;
+        width: 600px;
+    }
+
+    .main__gallery {
+        grid-template-columns: repeat(3, 480px);
+        grid-auto-rows: 260px;
+        grid-row-gap: 60px;
+        grid-column-gap: 60px;
+        justify-content: center;
+    }
+
+    .main__cell--horizontal-span {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+    
+    .main__cell--vertical-span {
+        grid-row-start: span 2;
+    }
+    
+    .main__cell--all-span {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+    .tips-presentation {
+        align-items: center;
+    }
+
+    .main__description--white {
+        width: 400px;
+    }
+
+    .reviews-presentation {
+        background-attachment: fixed;
+        justify-content: center;
+    }
+        
+
+    
+}
+/* Pruebas
+.prueba {
+    height: 50px;
+    width: 280px;
+    background-color: red;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+*/
