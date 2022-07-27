@@ -766,6 +766,7 @@ mobile height: 150px width: 160*/
 }
 
 
+
 @media screen and (min-width: 1024px){
     .games {
         padding: 10px
@@ -786,10 +787,10 @@ mobile height: 150px width: 160*/
     }
 
     .main__gallery {
-        grid-template-columns: repeat(3, 480px);
-        grid-auto-rows: 260px;
-        grid-row-gap: 60px;
-        grid-column-gap: 60px;
+        grid-template-columns: repeat(2, 300px);
+        grid-auto-rows: 200px;
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
         justify-content: center;
     }
 
@@ -821,6 +822,31 @@ mobile height: 150px width: 160*/
     }
         
 
+    
+}
+
+
+@media screen and (min-width: 1440px){
+
+    .main__gallery {
+        grid-template-columns: repeat(3, 390px);
+        grid-auto-rows: 260px;
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 1920px){
+
+    .main__gallery {
+        grid-template-columns: repeat(3, 480px);
+        grid-auto-rows: 260px;
+        grid-row-gap: 60px;
+        grid-column-gap: 60px;
+        justify-content: center;
+    }
     
 }
 /* Pruebas
