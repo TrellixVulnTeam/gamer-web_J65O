@@ -28,20 +28,52 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header container container--column">
-            <h1 class="header__title">Gamer</h1>
+        <header class="">
+            <nav class="navbar navbar-expand-lg">
 
-            <ul class="header__browser container container--row">
-                <li class="header__item"><a href="../index.html" class="header__link">Inicio</a></li>
-                <li class="header__item"><a href="games.html" class="header__link">Juegos</a></li>
-                <li class="header__item"><a href="tips.html" class="header__link">Tips</a></li>
-                <li class="header__item header__item--submenu"><a class="header__link">Más</a>
-                    <ul class="header__browser header__browser--submenu">
-                        <li class="header__item"><a href="collection.html" class="header__link">Items</a></li>
-                        <li class="header__item"><a href="reviews.html" class="header__link">Reseñas</a></li>
+                <div class="container-fluid">
+
+                  <a class="navbar-brand header__title" href="index.html">Gamer</a>
+                  <button 
+                  class="navbar-toggler" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#navbarNav" 
+                  aria-controls="navbarNav" 
+                  aria-expanded="false" 
+                  aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="games.html">Juegos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="tips.html">Tips</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" 
+                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Más
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="collection.html">Items</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="reviews.html">Reviews</a>
+                              </li>
+                        </ul>
+                      </li>
                     </ul>
-                </li>
-            </ul>
+                  </div>
+                </div>
+
+              </nav>
 
         </header>
 
