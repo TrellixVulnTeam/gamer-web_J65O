@@ -1,0 +1,508 @@
+@import "variables";
+/* CSS Emiliano Kaleb Jiménez Rivera*/
+/* 
+==================
+table of contents 
+1. global styles
+2. containers
+    2.1 global containers
+    2.2 specific containers
+3. elements
+    3.1 header elements
+    3.2 main elements
+    3.3 card elements
+    3.4 footer elements
+    3.5 other elements
+4. interactions
+    4.1 hovers
+        - header
+        - main
+        - card
+        - footer
+5. animations
+6. boostrap
+7. responsive
+8. utilities
+
+
+==================
+*/
+
+
+
+/* 
+=============
+1. global styles
+=============
+*/
+
+
+
+
+
+/* 
+=============
+2. containers
+=============
+*/
+
+/* ==== 2.1 globlal containers ==== */
+
+
+
+/* ==== 2.2 specific containers ==== */
+
+
+
+/* 
+=============
+3. elements
+=============
+*/
+
+/* ==== 3.1 header elements ==== */
+
+
+
+/* ======================= */
+
+/* ==== 3.2 main elements ==== */
+
+
+/*posible colors
+#fbf8cc, 
+#fde4cf, 
+#ffcfd2, 
+#f1c0e8, 
+#cfbaf0, 
+#a3c4f3,
+#90dbf4,
+#8eecf5,
+#98f5e1,
+#b9fbc0*/
+
+/* images */
+.main__case {
+    height: 20vh;
+    width: 45vw;
+}
+
+.main__game {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* subtitles */
+
+
+
+/* lines */
+
+
+
+/* buttons */
+
+
+
+/* links */
+
+
+
+/* cards */
+.main__card {
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+
+    &--tip {
+        height: 800px;
+        width: 280px;
+        background-color: #fbf8cc;
+        margin: 10px;
+    }
+}
+
+
+/* forms */
+.main__form {
+    padding: 20px;
+}
+
+.main__input {
+    display: block;
+    margin: 7px 0px;
+}
+
+
+/* tables */
+.main__table, .main__table-header, .main__table-data {
+    border-collapse: collapse;
+    border: solid 2px black;
+    padding: 5px;
+}
+
+.main__table-header {
+    background-color: #ffcfd2;
+}
+
+.main__table-data {
+    background-color: #fbf8cc;
+    text-align: center;
+}
+
+
+/* cells */
+.main__cell {
+    /* en este caso lo mejor es trabjar con porcentajes, ya que
+    no le especificas un tamanio y con ello puedes manipularlo me-
+    diante span */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px 0px black;
+    transition-delay: .3s;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+
+    &--horizontal-span {
+        grid-column-start: span 2;
+    }
+
+    &--vertical-span {
+        grid-row-start: span 2;
+    }
+
+    &--all-span {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+
+    &:hover {
+        height: 105%;
+        width: 105%;
+        transform: translate(-5px, -5px);
+        box-shadow: 0px 0px 15px 0px black;
+    }
+}
+
+
+/* descriptions*/
+.main__description {
+    font-size: 18px;
+    padding: 20px;
+
+    &--tip {
+        padding: 10px;
+    }
+}
+
+
+/* galleries */
+.main__gallery {
+    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-auto-rows: 130px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+
+
+/* special containers */
+
+
+
+
+/* ======================= */
+
+/* ==== 3.3 card elements ==== */
+
+
+
+/* ======================= */
+
+/* ==== 3.4 footer elements ==== */
+
+
+
+/* ======================= */
+
+/* ==== 3.5 other elements ==== */
+
+.indicator {
+    background-color: lightgrey;
+    border: solid 1px black;
+    border-radius: 10px;
+    height: 20px;
+    width: 80%;
+
+    &__level {
+        height: 100%;
+        border-radius: 20px;
+
+        &--nice {
+            width: 100%;
+            background-color: lightgreen;
+        }
+
+        &--medium {
+            width: 60%;
+            background-color: yellow;
+        }
+
+        &--bad {
+            width: 10%;
+            background-color: lightcoral;
+        }
+    }
+}
+
+/* ======================= */
+
+
+
+
+/* 
+=============
+5. animations
+=============
+*/
+
+
+
+
+
+
+/* 
+=============
+6. bootstrap
+=============
+*/
+
+.carousel {
+
+    &-indicators [data-bs-target] {
+        background-color: $color-blue;
+    }
+
+    &-item {
+        height: 30vh;
+    }
+
+    &-caption {
+
+        color: #fff;
+        text-shadow: 2px 2px #000000;
+
+        &--top{
+            bottom: none;
+            top: 1.25rem;
+        }
+
+        &--blue {
+            color: $color-blue;
+            text-shadow: 1px 1px #000000;
+        }
+
+
+    }
+
+    &__phrase {
+
+
+        &--exclamation {
+
+            &::before {
+                content: '¡';
+                font-size: 150%;
+                color: $color-red;
+                text-shadow: 2px 2px 
+                $color-yellow-mustard;
+            }
+
+            &::after {
+                content: '!';
+                font-size: 150%;
+                color: $color-red;
+                text-shadow: 2px 2px 
+                $color-yellow-mustard;
+            }
+        }
+    }
+
+    /*  NO FUNCIONO
+    &-control-prev,
+    &-control-next {
+        color: #90e0ef;
+    }
+
+    &-control-prev:hover,
+    &-control-next:hover,
+    &-control-prev:focus,
+    &-control-next:focus {
+        color: #00b4d8;
+    }
+    */
+
+}
+
+/* 
+=============
+7. responsive
+=============
+*/
+
+@media screen and (min-width: 425px) {
+    .main__case {
+        height: 25vh;
+        width: 45vw;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .main__gallery {
+        grid-template-columns: repeat(2, 240px);
+        grid-auto-rows: 260px;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        justify-content: center;
+    }
+
+    .main__case {
+        height: 40vh;
+        width: 45vw;
+    }
+
+    .main__card-title {
+        font-size: 50px;
+    }
+
+    .indicator {
+        border-radius: 35px;
+        height: 40px;
+    }
+
+    .main__card {
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .main__card--tip {
+        height: 1200px;
+        width: 480px;
+        background-color: #fbf8cc;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .main__gallery {
+        grid-template-columns: repeat(2, 300px);
+        grid-auto-rows: 200px;
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+        justify-content: center;
+    }
+
+    .main__case {
+        height: 40vh;
+        width: 30vw;
+    }
+
+    .main__cell {
+        
+        &--horizontal-span {
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+
+        &--vertical-span {
+            grid-row-start: span 2;
+        }
+
+        &--all-span {
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+    }
+
+    .carousel {
+
+        &-item {
+            height: 40vh;
+        }
+    }
+    
+    
+}
+
+@media screen and (min-width: 1440px){
+
+    .main__gallery {
+        grid-template-columns: repeat(3, 390px);
+        grid-auto-rows: 260px;
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+        justify-content: center;
+    }
+    
+    .main__case {
+        height: 50vh;
+        width: 30vw;
+    }
+
+    .carousel {
+
+        &-item {
+            height: 55vh;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1920px){
+
+    .main__gallery {
+        grid-template-columns: repeat(3, 480px);
+        grid-auto-rows: 260px;
+        grid-row-gap: 60px;
+        grid-column-gap: 60px;
+        justify-content: center;
+    }
+    
+}
+
+/* 
+=============
+8. utilities
+=============
+*/
+
+.fit {
+
+    &-cover {
+        object-fit: cover;
+    }
+
+    &-contain {
+        object-fit: contain;
+    }
+
+    &-fill {
+        object-fit: fill;
+    }
+
+    &-scale-down {
+        object-fit: scale-down;
+    }
+}

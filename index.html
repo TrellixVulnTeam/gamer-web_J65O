@@ -24,7 +24,7 @@
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <!--======== link de hoja de estilo ========-->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/prueba.css">
 </head>
 <body>
     <div class="wrapper">
@@ -35,251 +35,219 @@
 
                 <div class="container-fluid">
 
-                  <a class="navbar-brand header__title" href="index.html">Gamer</a>
-                  <button 
-                  class="navbar-toggler" 
-                  type="button" 
-                  data-bs-toggle="collapse" 
-                  data-bs-target="#navbarNav" 
-                  aria-controls="navbarNav" 
-                  aria-expanded="false" 
-                  aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="pages/games.html">Juegos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="pages/tips.html">Tips</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" 
-                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Más
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="pages/collection.html">Items</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="pages/reviews.html">Reviews</a>
-                              </li>
+                    <a class="navbar-brand header__title" href="index.html">Gamer</a>
+                    <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/games.html">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/tips.html">Tips</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" 
+                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Más
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="pages/collection.html">Items</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages/reviews.html">Reviews</a>
+                                </li>
+                            </ul>
+                        </li>
                         </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                    </div>
+                    </div>
 
-              </nav>
+                </nav>
 
         </header>
 
         <main class="main">
-            <section class="general container container--column">
-
-                <h1 class="main__subtitle main__subtitle--big main__subtitle--white">¡Bienvenido <br>gamer!</h1>
-
-                <hr class="main__line main__line--white">
-
-                <div class="main__button main__button--blue">
-                    <a href="" 
-                    class="main__link main__link--button">
-                    ¡Échale un vistazo a tu <br>próximo juego favorito!
-                    </a>
-                </div>
-
-            </section>
             
+                <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
 
-            <section class="games container ">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" 
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
 
-                <h2 class="main__subtitle main__subtitle--big main__subtitle--purple">Juegos Populares</h2>
+                    <div class="carousel-inner">
 
-                <div class="container main__bookcase">
+                        <div class="carousel-item active">
 
-                    <div class="main__game container" id="minecraft">
+                            <img src="media/img/consola.jpg" class="d-block w-100 h-100 fit-cover" alt="consola retro de videojuegos">
+                            <div class="carousel-caption carousel-caption--top d-block">
+                                <h5 class="fs-2 fw-bold">Gamer</h5>
+                                <p class="fs-4">La mejor página para todo aquel que le gusten los videojuegos</p>
+                            </div>
 
-                        <hr class="main__line">
-
-                        <div class="main__image">
-                            <img src="media/img/minecraft-nombre.png" alt="logo de minecraft"
-                            class="main__title--image">
                         </div>
 
-                        <p class="main__description main__description--bookcase">
-                            Minecraft, como su nombre indica, es una combinación entre ir creando minas 
-                            y picando en ellas para conseguir los elementos necesarios para mejorar tu 
-                            equipo y posibilidades.
-                        </p>
+                        <div class="carousel-item">
+
+                            <img src="media/img/control.jpg" class="d-block w-100 h-100 fit-cover" alt="Control de Xbox">
+                            <div class="carousel-caption d-block">
+                                <h5 class="fs-2 fw-bold">Nuevas Utilidades</h5>
+                                <p class="fs-4">Échale un vistazo a nuestras nuevas implementaciones, como "Colecciones" o "Juegos"</p>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <img src="media/img/nintendo-3ds.jpg" class="d-block w-100 h-100 fit-cover" alt="nintendo 3ds">                     
+                            <div class="carousel-caption carousel-caption--top carousel-caption--blue d-block">
+                                <h5 class="carousel__phrase carousel__phrase--exclamation fs-2 fw-bold">
+                                    Encuentra tu juego favorito aquí
+                                </h5>
+                            </div>
+
+                        </div>
 
                     </div>
 
-                    <div class="main__game container" id="fall-guys">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
 
-                        <hr class="main__line">
-                        
-                        <div class="main__image">
-                            <img src="media/img/fall-guys-nombre.png" alt="logo de fall guys"
-                            class="main__title--image">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </section>
+
+                <section id="games" class="pt-2">
+                    <h2 class="text-center">Juegos</h2>
+
+                    <div class="container p-3">
+
+                        <div class="row g-2 g-md-4 justify-content-center">
+                            <div class="col-6 col-lg-4 d-flex flex-row justify-content-center main__case">
+                                <img class="main__game fit-cover" src="media/img/games/halo.webp" alt="juego de halo">
+                            </div>
+
+                            <div class="col-6 col-lg-4 vw-40 d-flex flex-row justify-content-center main__case">
+                                <img class="main__game fit-cover" src="media/img/games/minecraft.jpg" alt="juego de minecraft">
+                            </div>
+
+                            <div class="col-6 col-lg-4 vw-40 d-flex flex-row justify-content-center main__case">
+                                <img class="main__game fit-cover" src="media/img/games/gta-5.jpg" alt="juego de gta 5">
+                            </div>
+
+                            <div class="col-6 col-lg-4 vw-40 d-flex flex-row justify-content-center main__case">
+                                <img class="main__game fit-cover" src="media/img/games/apex-legends.jpg" alt="juego de apex legends">
+                            </div>
+
+                            <div class="col-6 col-lg-4 vw-40 d-flex flex-row justify-content-center main__case">
+                                <img class="main__game fit-cover" src="media/img/games/forza-horizon-5.webp" alt="juego de forza horizon 5">
+                            </div>
+
+                            <div class="col-6 col-lg-4 vw-40 d-flex flex-row justify-content-center main__case">
+                                <img class="main__game fit-cover" src="media/img/games/assassins-creed-valhalla.png" 
+                                alt="juego de assassins creed valhalla">
+                            </div>
+
                         </div>
-
-                        <p class="main__description main__description--bookcase">
-                            Fall Guys es un party royale gratuito, multiplataforma y multijugador masivo 
-                            en el que tú y tus contrincantes compiten en caóticas rondas repletas de 
-                            obstáculos absurdos hasta que solo quede un ganador.
-                        </p>
-
-                    </div>
- 
-                    <div class="main__game container" id="elden-ring">
-                        
-                        <hr class="main__line">
-
-                        <div class="main__image">
-                            <img src="media/img/elden-ring-nombre.png" alt="logo de elden ring"
-                            class="main__title--image">
-                        </div>
-
-                        <p class="main__description main__description--bookcase">
-                            ELDEN RING es un RPG de fantasía, acción y aventura ambientado en un mundo de
-                            fantasía. El peligro y el descubrimiento están en cada giro del juego más 
-                            grande de FromSoftware hasta la fecha.
-                        </p>
-
-                    </div>
-
-                    <div class="main__game container" id="league-of-legends">
-
-                        <hr class="main__line">
-                        
-                        <div class="main__image">
-                            <img src="media/img/league-of-legends-nombre.png" alt="logo de league of legends"
-                            class="main__title--image">
-                        </div>
-
-                        <p class="main__description main__description--bookcase">
-                            League of Legends es un juego de estrategia por equipos en el que dos equipos 
-                            de cinco campeones se enfrentan para ver quién destruye antes la base del otro. 
-                            Elige de entre un elenco de 140 campeones para realizar jugadas épicas, 
-                            asesinar rivales y derribar torretas para alzarte con la victoria.
-                        </p>
 
                     </div>
 
-                    <div class="main__game container" id="forza-horizon">
-                        
-                        <hr class="main__line">
+                </section>
 
-                        <div class="main__image">
-                            <img src="media/img/forza-horizon.png" alt="logo de forza horizon"
-                            class="main__title--image">
+                <section id="collection" class="pt-2">
+
+                    <div class="container">
+
+                        <h2 class="text-center mb-4">Coleccionables</h2>
+
+                        <div class="main__gallery">
+                            <img 
+                            src="media/img/coleccionables/doom-eternal-figuras-de-coleccion.jpg.webp" 
+                            alt="figuras de coleccion de doom eternal"
+                            class="main__cell main__cell--horizontal-span">
+                            <img 
+                            src="media/img/coleccionables/halo-masterchief-coleccionable.webp" 
+                            alt="figura coleccionable de halo"
+                            class="main__cell main__cell--vertical-span">
+                            <img 
+                            src="media/img/coleccionables/iron-man-coleccionable.webp" 
+                            alt="figura coleccionable de iron man"
+                            class="main__cell main__cell--vertical-span">
+                            <img 
+                            src="media/img/coleccionables/nintendo-mobile.png" 
+                            alt="figuras de nintendo coleccionables"
+                            class="main__cell main__cell--horizontal-span">
+                            <img 
+                            src="media/img/coleccionables/mario-coleccionable.webp" 
+                            alt="figuras de mario coleccionables"
+                            class="main__cell">
+                            <img 
+                            src="media/img/coleccionables/unicornio-coleccionable.jpg" 
+                            alt="unicornio de fortnite coleccionable"
+                            class="main__cell">
                         </div>
-                        
 
-                        <p class="main__description main__description--bookcase">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam commodi ab dolor 
-                            quidem, vero cupiditate odit ea molestiae quas fugit ut voluptatem voluptatibus, 
-                            rem, ipsum minima doloribus voluptatum laborum reiciendis odio. 
-                            Cupiditate neque incidunt iusto sed laboriosam veniam.
-                        </p>
+
+                        <a href="pages/collection.html" class="main__link main__link--page">Ver más...</a>
 
                     </div>
 
-                    <div class="main__game container" id="gta">
-                        
-                        <hr class="main__line">
-
-                        <div class="main__image">
-                            <img src="media/img/gta-5.png" alt="logo de GTA"
-                            class="main__title--image">
-                        </div>
-
-                        <p class="main__description main__description--bookcase">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam commodi ab dolor 
-                            quidem, vero cupiditate odit ea molestiae quas fugit ut voluptatem voluptatibus, 
-                            rem, ipsum minima doloribus voluptatum laborum reiciendis odio. 
-                            Cupiditate neque incidunt iusto sed laboriosam veniam.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <a href="pages/games.html" class="main__link main__link--page">Ver más...</a>
-            </section>
-
-            <section  class="collection container">
-
-                <h2 class="main__subtitle main__subtitle--big main__subtitle--blue">Coleccionables</h2>
-
-                <div class="main__gallery">
-                    <img 
-                    src="media/img/coleccionables/doom-eternal-figuras-de-coleccion.jpg.webp" 
-                    alt="figuras de coleccion de doom eternal"
-                    class="main__cell main__cell--horizontal-span">
-                    <img 
-                    src="media/img/coleccionables/halo-masterchief-coleccionable.webp" 
-                    alt="figura coleccionable de halo"
-                    class="main__cell main__cell--vertical-span">
-                    <img 
-                    src="media/img/coleccionables/iron-man-coleccionable.webp" 
-                    alt="figura coleccionable de iron man"
-                    class="main__cell main__cell--vertical-span">
-                    <img 
-                    src="media/img/coleccionables/nintendo-mobile.png" 
-                    alt="figuras de nintendo coleccionables"
-                    class="main__cell main__cell--horizontal-span">
-                    <img 
-                    src="media/img/coleccionables/mario-coleccionable.webp" 
-                    alt="figuras de mario coleccionables"
-                    class="main__cell">
-                    <img 
-                    src="media/img/coleccionables/unicornio-coleccionable.jpg" 
-                    alt="unicornio de fortnite coleccionable"
-                    class="main__cell">
-                </div>
-
-
-                <a href="pages/collection.html" class="main__link main__link--page">Ver más...</a>
-                
-            </section>
+                </section>
 
         </main>
 
-        <footer class="footer">
+        <footer class="footer container p-3">
 
-            <div class="about">
-                <h4 class="footer__subtitle">Acerca de:</h4>
-                <p class="footer__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Dolore voluptatum neque incidunt laborum suscipit molestias 
-                    sapiente obcaecati ipsa hic expedita!
-                </p>
-            </div>
+            <div class="row">
 
-            <div class="social-media">
-                <h4 class="footer__subtitle">Redes Sociales:</h4>
-                <p class="footer__description">
-                    Youtube: Lorem ipsum dolor sit amet.
-                    <br>
-                    Instagram: Lorem ipsum dolor sit amet.
-                    <br>
-                    Facebook: Lorem ipsum dolor sit amet.
-                </p>
-            </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="footer__subtitle">Acerca de:</h4>
+                    <p class="footer__description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Dolore voluptatum neque incidunt laborum suscipit molestias 
+                        sapiente obcaecati ipsa hic expedita!
+                    </p>
+                </div>
 
-            <div class="sponsors">
-                <h4 class="footer__subtitle">Patrocinadores</h4>
-                <p class="footer__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Dolore voluptatum neque incidunt laborum suscipit molestias 
-                    sapiente obcaecati ipsa hic expedita!
-                </p>
+                <div class="col-12 col-md-4">
+                    <h4 class="footer__subtitle">Redes Sociales:</h4>
+                    <p class="footer__description">
+                        Youtube: Lorem ipsum dolor sit amet.
+                        <br>
+                        Instagram: Lorem ipsum dolor sit amet.
+                        <br>
+                        Facebook: Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 ">
+                    <h4 class="footer__subtitle">Patrocinadores</h4>
+                    <p class="footer__description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Dolore voluptatum neque incidunt laborum suscipit molestias 
+                        sapiente obcaecati ipsa hic expedita!
+                    </p>
+                </div>
+
             </div>
 
         </footer>
@@ -287,7 +255,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
         crossorigin="anonymous"></script>
-  </body>
+        
+    </body>
 
     </div>
 </body>

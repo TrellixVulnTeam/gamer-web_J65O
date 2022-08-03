@@ -1,231 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gamer</title>
-    
+
     <!--======== links para fuentes de google fonts ========-->
     <!-- fuente Press Start 2P-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Kanit-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
 
     <!--======== link de bootstrap (CDN) ========
     hecho de esta manera para poder cambiar algunas caracteristicas con nuestro css, se pone al final para pisar
     al css de bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
 
     <!--======== link de hoja de estilo ========-->
-    <link rel="stylesheet" href="../css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/prueba.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="">
-            <nav class="navbar navbar-expand-lg">
+      <header class="">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand header__title" href="index.html">Gamer</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="games.html">Juegos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tips.html">Tips</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Más
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="collection.html">Items</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="reviews.html">Reviews</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-                <div class="container-fluid">
+      <main class="main">
+        <section id="collection" class="pt-2">
+          <div class="container">
+            <h2 class="text-center mb-4">Coleccionables</h2>
 
-                  <a class="navbar-brand header__title" href="index.html">Gamer</a>
-                  <button 
-                  class="navbar-toggler" 
-                  type="button" 
-                  data-bs-toggle="collapse" 
-                  data-bs-target="#navbarNav" 
-                  aria-controls="navbarNav" 
-                  aria-expanded="false" 
-                  aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="games.html">Juegos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="tips.html">Tips</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" 
-                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Más
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="collection.html">Items</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="reviews.html">Reviews</a>
-                              </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+            <div class="main__gallery">
+              <img
+                src="../media/img/coleccionables/doom-eternal-figuras-de-coleccion.jpg.webp"
+                alt="figuras de coleccion de doom eternal"
+                class="main__cell main__cell--horizontal-span"
+              />
 
-              </nav>
+              <img
+                src="../media/img/coleccionables/halo-masterchief-coleccionable.webp"
+                alt="figura coleccionable de halo"
+                class="main__cell"
+              />
 
-        </header>
+              <img
+                src="../media/img/coleccionables/iron-man-coleccionable.webp"
+                alt="figura coleccionable de iron man"
+                class="main__cell"
+              />
 
-        <main class="main">
+              <img
+                src="../media/img/coleccionables/nintendo-mobile.png"
+                alt="figuras de nintendo coleccionables"
+                class="main__cell main__cell--horizontal-span"
+              />
 
-            <section  class="collection">
+              <img
+                src="../media/img/coleccionables/mario-coleccionable.webp"
+                alt="figuras de mario coleccionables"
+                class="main__cell"
+              />
 
-                <h2 class="main__subtitle main__subtitle--big main__subtitle--blue">Coleccionables</h2>
+              <img
+                src="../media/img/coleccionables/unicornio-coleccionable.jpg"
+                alt="unicornio de fortnite coleccionable"
+                class="main__cell"
+              />
 
-                <p class="main__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos quod cumque 
-                    odit ea amet! Ipsa nihil sed tempora? Sed.
-                </p>
-                
+              <img
+                src="../media/img/coleccionables/figura-mortal-kombat-coleccionable.jpg"
+                alt="unicornio de fortnite coleccionable"
+                class="main__cell main__cell--all-span"
+              />
 
-                <div class="main__gallery">
+              <img
+                src="../media/img/coleccionables/spider-man-coleccionable.webp"
+                alt="unicornio de fortnite coleccionable"
+                class="main__cell main__cell--vertical-span"
+              />
 
-                    <img 
-                    src="../media/img/coleccionables/doom-eternal-figuras-de-coleccion.jpg.webp" 
-                    alt="figuras de coleccion de doom eternal"
-                    class="main__cell main__cell--horizontal-span">
+              <img
+                src="../media/img/coleccionables/team-fortress-coleccionable.jpg"
+                alt="unicornio de fortnite coleccionable"
+                class="main__cell main__cell--vertical-span"
+              />
 
-                    <img 
-                    src="../media/img/coleccionables/halo-masterchief-coleccionable.webp" 
-                    alt="figura coleccionable de halo"
-                    class="main__cell">
-
-                    <img 
-                    src="../media/img/coleccionables/iron-man-coleccionable.webp" 
-                    alt="figura coleccionable de iron man"
-                    class="main__cell">
-
-                    <img 
-                    src="../media/img/coleccionables/nintendo-mobile.png" 
-                    alt="figuras de nintendo coleccionables"
-                    class="main__cell main__cell--horizontal-span">
-
-                    <img 
-                    src="../media/img/coleccionables/mario-coleccionable.webp" 
-                    alt="figuras de mario coleccionables"
-                    class="main__cell">
-
-                    <img 
-                    src="../media/img/coleccionables/unicornio-coleccionable.jpg" 
-                    alt="unicornio de fortnite coleccionable"
-                    class="main__cell">
-
-                    <img 
-                    src="../media/img/coleccionables/figura-mortal-kombat-coleccionable.jpg" 
-                    alt="unicornio de fortnite coleccionable"
-                    class="main__cell main__cell--all-span">
-
-                    <img 
-                    src="../media/img/coleccionables/spider-man-coleccionable.webp" 
-                    alt="unicornio de fortnite coleccionable"
-                    class="main__cell main__cell--vertical-span">
-
-                    <img 
-                    src="../media/img/coleccionables/team-fortress-coleccionable.jpg" 
-                    alt="unicornio de fortnite coleccionable"
-                    class="main__cell main__cell--vertical-span">
-
-                    <img 
-                    src="../media/img/coleccionables/cartas-coleccionable.jpg" 
-                    alt="unicornio de fortnite coleccionable"
-                    class="main__cell">
-
-                </section>
-
-            </section>
-
-            <section class="submit" >
-
-                <form action="" class="main__form">
-
-                    <fieldset class="main__form">
-
-                        <legend>Sube tu coleccionable</legend>
-
-                        <fieldset class="main__form">
-
-                            <legend>Informacion Personal</legend>
-    
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" class="main__input">
-    
-                            <label for="apellido">Apellido:</label>
-                            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" class="main__input">
-    
-                            <label for="correo">Correo electronico:</label>
-                            <input type="text" id="correo" name="correo" placeholder="Escribe tu correo electronico" class="main__input">
-    
-                        </fieldset>
-    
-                        <fieldset class="main__form">
-    
-                            <legend>Tipo de coleccionable</legend>
-    
-                            <label for="coleccionable">Elige el tipo de coleccionable: </label>
-                            <select name="coleccionable" id="coleccionable" class="main__input">
-                                <option value="coleccionable">Figura de Accion</option>
-                                <option value="coleccionable">Estatua</option>
-                                <option value="coleccionable">Cartas</option>
-                                <option value="coleccionable">Ropa</option>
-                                <option value="coleccionable">Otro</option>
-                            </select>
-    
-                        </fieldset>
-    
-                        <input type="submit" placeholder="Enviar" class="main__input">
-
-                    </fieldset>
-
-                </form>
-                    
-
-            </section>
-
-        </main>
-
-        <footer class="footer">
-
-            <div class="about">
-                <h4 class="footer__subtitle">Acerca de:</h4>
-                <p class="footer__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Dolore voluptatum neque incidunt laborum suscipit molestias 
-                    sapiente obcaecati ipsa hic expedita!
-                </p>
+              <img
+                src="../media/img/coleccionables/cartas-coleccionable.jpg"
+                alt="unicornio de fortnite coleccionable"
+                class="main__cell"
+              />
             </div>
 
-            <div class="social-media">
-                <h4 class="footer__subtitle">Redes Sociales:</h4>
-                <p class="footer__description">
-                    Youtube: Lorem ipsum dolor sit amet.
-                    <br>
-                    Instagram: Lorem ipsum dolor sit amet.
-                    <br>
-                    Facebook: Lorem ipsum dolor sit amet.
-                </p>
-            </div>
+            <a href="pages/collection.html" class="main__link main__link--page"
+              >Ver más...</a
+            >
+          </div>
+        </section>
 
-            <div class="sponsors">
-                <h4 class="footer__subtitle">Patrocinadores</h4>
-            </div>
+        <section class="submit">
+          <form action="" class="main__form">
+            <fieldset class="main__form">
+              <legend>Sube tu coleccionable</legend>
 
-        </footer>
+              <fieldset class="main__form">
+                <legend>Informacion Personal</legend>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
-        crossorigin="anonymous"></script>
+                <label for="nombre">Nombre:</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Escribe tu nombre"
+                  class="main__input"
+                />
 
+                <label for="apellido">Apellido:</label>
+                <input
+                  type="text"
+                  id="apellido"
+                  name="apellido"
+                  placeholder="Escribe tu apellido"
+                  class="main__input"
+                />
+
+                <label for="correo">Correo electronico:</label>
+                <input
+                  type="text"
+                  id="correo"
+                  name="correo"
+                  placeholder="Escribe tu correo electronico"
+                  class="main__input"
+                />
+              </fieldset>
+
+              <fieldset class="main__form">
+                <legend>Tipo de coleccionable</legend>
+
+                <label for="coleccionable"
+                  >Elige el tipo de coleccionable:
+                </label>
+                <select
+                  name="coleccionable"
+                  id="coleccionable"
+                  class="main__input"
+                >
+                  <option value="coleccionable">Figura de Accion</option>
+                  <option value="coleccionable">Estatua</option>
+                  <option value="coleccionable">Cartas</option>
+                  <option value="coleccionable">Ropa</option>
+                  <option value="coleccionable">Otro</option>
+                </select>
+              </fieldset>
+
+              <input type="submit" placeholder="Enviar" class="main__input" />
+            </fieldset>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer container p-3">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h4 class="footer__subtitle">Acerca de:</h4>
+            <p class="footer__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              voluptatum neque incidunt laborum suscipit molestias sapiente
+              obcaecati ipsa hic expedita!
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h4 class="footer__subtitle">Redes Sociales:</h4>
+            <p class="footer__description">
+              Youtube: Lorem ipsum dolor sit amet.
+              <br />
+              Instagram: Lorem ipsum dolor sit amet.
+              <br />
+              Facebook: Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h4 class="footer__subtitle">Patrocinadores</h4>
+            <p class="footer__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              voluptatum neque incidunt laborum suscipit molestias sapiente
+              obcaecati ipsa hic expedita!
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"
+      ></script>
     </div>
-</body>
+  </body>
 </html>
