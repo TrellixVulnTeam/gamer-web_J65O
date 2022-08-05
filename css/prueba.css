@@ -60,7 +60,7 @@ table of contents
 #b9fbc0*/
 /* images */
 .main__case {
-  height: 20vh;
+  height: 25vh;
   width: 45vw; }
 
 .main__game {
@@ -231,7 +231,7 @@ table of contents
 */
 @media screen and (min-width: 425px) {
   .main__case {
-    height: 25vh;
+    height: 30vh;
     width: 45vw; } }
 
 @media screen and (min-width: 768px) {
@@ -242,8 +242,8 @@ table of contents
     grid-column-gap: 20px;
     justify-content: center; }
   .main__case {
-    height: 40vh;
-    width: 45vw; }
+    height: 38vh;
+    width: 30vw; }
   .main__card-title {
     font-size: 50px; }
   .indicator {
