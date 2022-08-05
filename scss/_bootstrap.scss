@@ -1,0 +1,72 @@
+/* 
+=============
+6. bootstrap
+=============
+*/
+
+.carousel {
+
+    &-indicators [data-bs-target] {
+        background-color: $color-blue;
+    }
+
+    &-item {
+        height: 30vh;
+    }
+
+    &-caption {
+
+        color: #fff;
+        text-shadow: 2px 2px #000000;
+
+        &--top{
+            bottom: none;
+            top: 1.25rem;
+        }
+
+        &--blue {
+            color: $color-blue;
+            text-shadow: 1px 1px #000000;
+        }
+
+
+    }
+
+    &__phrase {
+
+
+        &--exclamation {
+
+            &::before {
+                content: '¡';
+                font-size: 150%;
+                color: $color-red;
+                text-shadow: 2px 2px 
+                $color-yellow-mustard;
+            }
+
+            &::after {
+                content: '!';
+                font-size: 150%;
+                color: $color-red;
+                text-shadow: 2px 2px 
+                $color-yellow-mustard;
+            }
+        }
+    }
+
+    /*  NO FUNCIONO
+    &-control-prev,
+    &-control-next {
+        color: #90e0ef;
+    }
+
+    &-control-prev:hover,
+    &-control-next:hover,
+    &-control-prev:focus,
+    &-control-next:focus {
+        color: #00b4d8;
+    }
+    */
+
+}

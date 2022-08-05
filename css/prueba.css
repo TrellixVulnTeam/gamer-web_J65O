@@ -29,6 +29,11 @@ table of contents
 */
 /* 
 =============
+variables
+=============
+*/
+/* 
+=============
 1. global styles
 =============
 */
@@ -59,6 +64,7 @@ table of contents
 #98f5e1,
 #b9fbc0*/
 /* images */
+/* images */
 .main__case {
   height: 25vh;
   width: 45vw; }
@@ -87,6 +93,7 @@ table of contents
     margin: 10px; }
 
 /* forms */
+/* forms */
 .main__form {
   padding: 20px; }
 
@@ -94,6 +101,7 @@ table of contents
   display: block;
   margin: 7px 0px; }
 
+/* tables */
 /* tables */
 .main__table, .main__table-header, .main__table-data {
   border-collapse: collapse;
@@ -186,6 +194,11 @@ table of contents
 6. bootstrap
 =============
 */
+/* 
+=============
+6. bootstrap
+=============
+*/
 .carousel {
   /*  NO FUNCIONO
     &-control-prev,
@@ -229,6 +242,11 @@ table of contents
 7. responsive
 =============
 */
+/* 
+=============
+7. responsive
+=============
+*/
 @media screen and (min-width: 425px) {
   .main__case {
     height: 30vh;
@@ -266,7 +284,7 @@ table of contents
     grid-column-gap: 40px;
     justify-content: center; }
   .main__case {
-    height: 40vh;
+    height: 45vh;
     width: 30vw; }
   .main__cell--horizontal-span {
     grid-column-start: span 2;
@@ -287,7 +305,7 @@ table of contents
     grid-column-gap: 40px;
     justify-content: center; }
   .main__case {
-    height: 50vh;
+    height: 70vh;
     width: 30vw; }
   .carousel-item {
     height: 55vh; } }
@@ -298,7 +316,10 @@ table of contents
     grid-auto-rows: 260px;
     grid-row-gap: 60px;
     grid-column-gap: 60px;
-    justify-content: center; } }
+    justify-content: center; }
+  .main__case {
+    height: 55vh;
+    width: 20vw; } }
 
 /* 
 =============

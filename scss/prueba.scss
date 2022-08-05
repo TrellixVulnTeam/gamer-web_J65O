@@ -1,4 +1,3 @@
-@import "variables";
 /* CSS Emiliano Kaleb Jiménez Rivera*/
 /* 
 ==================
@@ -28,6 +27,13 @@ table of contents
 ==================
 */
 
+/* 
+=============
+variables
+=============
+*/
+
+@import "_variables";
 
 
 /* 
@@ -82,15 +88,7 @@ table of contents
 #b9fbc0*/
 
 /* images */
-.main__case {
-    height: 25vh;
-    width: 45vw;
-}
-
-.main__game {
-    width: 100%;
-    height: 100%;
-}
+@import "_images";
 
 
 /* subtitles */
@@ -129,32 +127,11 @@ table of contents
 
 
 /* forms */
-.main__form {
-    padding: 20px;
-}
-
-.main__input {
-    display: block;
-    margin: 7px 0px;
-}
+@import "_forms";
 
 
 /* tables */
-.main__table, .main__table-header, .main__table-data {
-    border-collapse: collapse;
-    border: solid 2px black;
-    padding: 5px;
-}
-
-.main__table-header {
-    background-color: #ffcfd2;
-}
-
-.main__table-data {
-    background-color: #fbf8cc;
-    text-align: center;
-}
-
+@import "_tables";
 
 /* cells */
 .main__cell {
@@ -276,211 +253,23 @@ table of contents
 =============
 */
 
-
-
-
-
-
 /* 
 =============
 6. bootstrap
 =============
 */
-
-.carousel {
-
-    &-indicators [data-bs-target] {
-        background-color: $color-blue;
-    }
-
-    &-item {
-        height: 30vh;
-    }
-
-    &-caption {
-
-        color: #fff;
-        text-shadow: 2px 2px #000000;
-
-        &--top{
-            bottom: none;
-            top: 1.25rem;
-        }
-
-        &--blue {
-            color: $color-blue;
-            text-shadow: 1px 1px #000000;
-        }
+@import "_bootstrap";
 
 
-    }
 
-    &__phrase {
-
-
-        &--exclamation {
-
-            &::before {
-                content: '¡';
-                font-size: 150%;
-                color: $color-red;
-                text-shadow: 2px 2px 
-                $color-yellow-mustard;
-            }
-
-            &::after {
-                content: '!';
-                font-size: 150%;
-                color: $color-red;
-                text-shadow: 2px 2px 
-                $color-yellow-mustard;
-            }
-        }
-    }
-
-    /*  NO FUNCIONO
-    &-control-prev,
-    &-control-next {
-        color: #90e0ef;
-    }
-
-    &-control-prev:hover,
-    &-control-next:hover,
-    &-control-prev:focus,
-    &-control-next:focus {
-        color: #00b4d8;
-    }
-    */
-
-}
 
 /* 
 =============
 7. responsive
 =============
 */
+@import "_responsive";
 
-@media screen and (min-width: 425px) {
-    .main__case {
-        height: 30vh;
-        width: 45vw;
-    }
-}
-
-
-@media screen and (min-width: 768px) {
-    .main__gallery {
-        grid-template-columns: repeat(2, 240px);
-        grid-auto-rows: 260px;
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        justify-content: center;
-    }
-
-    .main__case {
-        height: 38vh;
-        width: 30vw;
-    }
-
-    .main__card-title {
-        font-size: 50px;
-    }
-
-    .indicator {
-        border-radius: 35px;
-        height: 40px;
-    }
-
-    .main__card {
-        padding: 40px;
-        border-radius: 10px;
-    }
-
-    .main__card--tip {
-        height: 1200px;
-        width: 480px;
-        background-color: #fbf8cc;
-        margin: 20px;
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-    .main__gallery {
-        grid-template-columns: repeat(2, 300px);
-        grid-auto-rows: 200px;
-        grid-row-gap: 40px;
-        grid-column-gap: 40px;
-        justify-content: center;
-    }
-
-    .main__case {
-        height: 40vh;
-        width: 30vw;
-    }
-
-    .main__cell {
-        
-        &--horizontal-span {
-            grid-column-start: span 2;
-            grid-row-start: span 2;
-        }
-
-        &--vertical-span {
-            grid-row-start: span 2;
-        }
-
-        &--all-span {
-            grid-column-start: span 2;
-            grid-row-start: span 2;
-        }
-    }
-
-    .carousel {
-
-        &-item {
-            height: 40vh;
-        }
-    }
-    
-    
-}
-
-@media screen and (min-width: 1440px){
-
-    .main__gallery {
-        grid-template-columns: repeat(3, 390px);
-        grid-auto-rows: 260px;
-        grid-row-gap: 40px;
-        grid-column-gap: 40px;
-        justify-content: center;
-    }
-    
-    .main__case {
-        height: 50vh;
-        width: 30vw;
-    }
-
-    .carousel {
-
-        &-item {
-            height: 55vh;
-        }
-    }
-
-}
-
-@media screen and (min-width: 1920px){
-
-    .main__gallery {
-        grid-template-columns: repeat(3, 480px);
-        grid-auto-rows: 260px;
-        grid-row-gap: 60px;
-        grid-column-gap: 60px;
-        justify-content: center;
-    }
-    
-}
 
 /* 
 =============

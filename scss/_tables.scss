@@ -1,0 +1,15 @@
+/* tables */
+.main__table, .main__table-header, .main__table-data {
+    border-collapse: collapse;
+    border: solid 2px black;
+    padding: 5px;
+}
+
+.main__table-header {
+    background-color: #ffcfd2;
+}
+
+.main__table-data {
+    background-color: #fbf8cc;
+    text-align: center;
+}

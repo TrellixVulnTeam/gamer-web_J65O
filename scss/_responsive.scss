@@ -1,0 +1,131 @@
+/* 
+=============
+7. responsive
+=============
+*/
+
+@media screen and (min-width: 425px) {
+    .main__case {
+        height: 30vh;
+        width: 45vw;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .main__gallery {
+        grid-template-columns: repeat(2, 240px);
+        grid-auto-rows: 260px;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        justify-content: center;
+    }
+
+    .main__case {
+        height: 38vh;
+        width: 30vw;
+    }
+
+    .main__card-title {
+        font-size: 50px;
+    }
+
+    .indicator {
+        border-radius: 35px;
+        height: 40px;
+    }
+
+    .main__card {
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .main__card--tip {
+        height: 1200px;
+        width: 480px;
+        background-color: #fbf8cc;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .main__gallery {
+        grid-template-columns: repeat(2, 300px);
+        grid-auto-rows: 200px;
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+        justify-content: center;
+    }
+
+    .main__case {
+        height: 45vh;
+        width: 30vw;
+    }
+
+    .main__cell {
+        
+        &--horizontal-span {
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+
+        &--vertical-span {
+            grid-row-start: span 2;
+        }
+
+        &--all-span {
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+    }
+
+    .carousel {
+
+        &-item {
+            height: 40vh;
+        }
+    }
+    
+    
+}
+
+@media screen and (min-width: 1440px){
+
+    .main__gallery {
+        grid-template-columns: repeat(3, 390px);
+        grid-auto-rows: 260px;
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+        justify-content: center;
+    }
+    
+    .main__case {
+        height: 70vh;
+        width: 30vw;
+    }
+
+    .carousel {
+
+        &-item {
+            height: 55vh;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1920px){
+
+    .main__gallery {
+        grid-template-columns: repeat(3, 480px);
+        grid-auto-rows: 260px;
+        grid-row-gap: 60px;
+        grid-column-gap: 60px;
+        justify-content: center;
+    }
+    
+    .main__case {
+        height: 55vh;
+        width: 20vw;
+    }
+}
