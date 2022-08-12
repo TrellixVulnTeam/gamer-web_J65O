@@ -1,7 +1,14 @@
 // VARIABLES
 
 // COLORES
-$color-yellow-mustard: #fcbf49;
-$color-red: #ff595e;
-$color-light-blue: #90e0ef;
-$color-blue: #00b4d8;
+$colors: (
+    yellow-mustard: #fcbf49,
+    light-red: #ff595e,
+    light-blue: #90e0ef,
+    neutral-blue: #00b4d8
+);
+
+@mixin indicator__level ($width, $color){
+    width: $width;
+    background-color: $color;
+}

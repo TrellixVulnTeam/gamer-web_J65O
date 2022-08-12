@@ -175,6 +175,7 @@ variables
     padding: 20px;
 
     &--tip {
+        @extend .main__description;
         padding: 10px;
     }
 }
@@ -226,18 +227,15 @@ variables
         border-radius: 20px;
 
         &--nice {
-            width: 100%;
-            background-color: lightgreen;
+            @include indicator__level(100%, lightgreen);
         }
 
         &--medium {
-            width: 60%;
-            background-color: yellow;
+            @include indicator__level(60%, yellow);
         }
 
         &--bad {
-            width: 10%;
-            background-color: lightcoral;
+            @include indicator__level(10%, lightcoral);
         }
     }
 }
@@ -294,4 +292,9 @@ variables
     &-scale-down {
         object-fit: scale-down;
     }
+}
+
+@mixin indicator__level ($width, $color){
+    width: $width;
+    background-color: $color;
 }

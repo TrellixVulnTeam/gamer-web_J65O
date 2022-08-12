@@ -7,7 +7,7 @@
 .carousel {
 
     &-indicators [data-bs-target] {
-        background-color: $color-blue;
+        background-color: map-get($colors, neutral-blue);
     }
 
     &-item {
@@ -25,7 +25,7 @@
         }
 
         &--blue {
-            color: $color-blue;
+            color: map-get($colors, neutral-blue);
             text-shadow: 1px 1px #000000;
         }
 
@@ -40,17 +40,17 @@
             &::before {
                 content: '¡';
                 font-size: 150%;
-                color: $color-red;
+                color: map-get($colors, color-red);
                 text-shadow: 2px 2px 
-                $color-yellow-mustard;
+                map-get($colors, yellow-mustard)
             }
 
             &::after {
                 content: '!';
                 font-size: 150%;
-                color: $color-red;
+                color: map-get($colors, color-red);
                 text-shadow: 2px 2px 
-                $color-yellow-mustard;
+                map-get($colors, yellow-mustard)
             }
         }
     }
