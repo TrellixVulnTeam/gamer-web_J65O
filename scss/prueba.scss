@@ -293,8 +293,3 @@ variables
         object-fit: scale-down;
     }
 }
-
-@mixin indicator__level ($width, $color){
-    width: $width;
-    background-color: $color;
-}
