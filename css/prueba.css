@@ -199,6 +199,9 @@ variables
 6. bootstrap
 =============
 */
+.background-blue {
+  background-color: lightblue; }
+
 .carousel {
   /*  NO FUNCIONO
     &-control-prev,
